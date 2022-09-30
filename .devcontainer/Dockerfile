@@ -1,6 +1,10 @@
 FROM archlinux
 RUN pacman -Syu
-RUN pacman -S go kubectl git make python-pip
+RUN pacman -S go
+RUN pacman -S kubectl
+RUN pacman -S git
+RUN pacman -S make
+RUN pacman -S python-pip
 
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 RUN nvm install node
