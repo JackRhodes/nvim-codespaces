@@ -1,4 +1,5 @@
 FROM archlinux
+RUN pacman -syu
 RUN pacman -S go kubectl git make python-pip
 
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
